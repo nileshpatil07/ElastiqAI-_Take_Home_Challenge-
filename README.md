@@ -1,2 +1,2 @@
-# ElastiqAI-_Take_Home_Challenge-
+# ElastiqAI_Take_Home_Challenge
 OpenSearch hosting in Kubernetes using Operator
