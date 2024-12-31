@@ -33,7 +33,7 @@ module "eks" {
   source = "terraform-aws-modules/eks/aws"
 
   cluster_name    = "my-eks-cluster"
-  cluster_version = "1.24"
+  cluster_version = "1.27"
 
   cluster_endpoint_public_access = true
 
@@ -42,8 +42,8 @@ module "eks" {
 
   eks_managed_node_groups = {
     nodes = {
-      min_size     = 2
-      max_size     = 4
+      min_size     = 1
+      max_size     = 3
       desired_size = 2
 
       instance_type = ["t2.micro"]
