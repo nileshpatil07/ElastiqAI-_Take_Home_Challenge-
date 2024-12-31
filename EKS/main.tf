@@ -42,8 +42,8 @@ module "eks" {
 
   eks_managed_node_groups = {
     nodes = {
-      min_size     = 1
-      max_size     = 3
+      min_size     = 2
+      max_size     = 4
       desired_size = 2
 
       instance_type = ["t2.micro"]
